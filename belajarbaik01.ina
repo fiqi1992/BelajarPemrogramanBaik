@@ -1,0 +1,16 @@
+# Belajar Pemrograman Baik
+tulis "---PERKALIAN MENGGUNAKAN PEMROGRAMAN BAIK--- \n"
+
+# memasukkan input variable
+tulis "Masukkan angka 1 : " 
+masuk angka1
+
+tulis "Masukkan angka 2 : "
+masuk angka2
+
+# hasil perkalian
+hasil = angka1*angka2
+
+tulis "Perkalian antara ",angka1," dan ",angka2," adalah : ",hasil,"\n"
+
+
