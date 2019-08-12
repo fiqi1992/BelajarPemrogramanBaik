@@ -13,4 +13,4 @@ hasil = angka1*angka2
 
 tulis "Perkalian antara ",angka1," dan ",angka2," adalah : ",hasil,"\n"
 
-
+tamat
