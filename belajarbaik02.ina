@@ -1,0 +1,18 @@
+# Belajar pemrograman BAIK 02 if else
+
+tulis "==-Aplikasi Logika If Else-== \n"
+tulis "\n"
+
+tulis "Masukkan nilai a : "
+masuk a
+
+tulis "Masukkan nilai b : "
+masuk b
+
+kalau a==b maka
+	tulis "variable a sama dengan b \n"
+lainnya
+	tulis "Variable a tidak sama dengan b \n"
+akhirkalau
+
+tamat

@@ -1,0 +1,46 @@
+# Belajar pemrograman BAIK 03
+
+tulis "Belajar Pemrograman BAIK ke - 2\n"
+tulis "\n"
+tulis "Aplikasi Kalkulator BAIK-Lang\n"
+
+tulis "Masukkan angka pertama : "
+masuk angka1
+
+tulis "Masukkan angka kedua : "
+masuk angka2
+
+tulis "PILIHAN : \n"
+
+tulis "1. Jumlah \n"
+tulis "2. Kurangi \n"
+tulis "3. Kali \n"
+tulis "4. Bagi \n"
+
+tulis "Masukkan pilihan (dalam angka) : "
+masuk pilihan
+
+pilih pilihan
+{
+	sama 1
+		hasil = angka1+angka2
+	akhirpilih
+	
+	sama 2
+		hasil = angka1-angka2
+	akhirpilih
+	
+	sama 3
+		hasil = angka1*angka2
+	akhirpilih
+	
+	sama 4
+		hasil = angka1/angka2
+	akhirpilih
+}
+
+tulis "Hasilnya adalah : ",hasil,"\n"
+tulis "\n"
+tulis "Mau lanjut? [y/n] \n"
+
+tamat
