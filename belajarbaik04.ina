@@ -1,0 +1,26 @@
+# Belajar pemrograman BAIK 04
+
+# Fungsi looping dengan bahasa pemrograman BAIK
+
+tulis "-==FUNGSI LOOPING DI BAIK-LANG==-\n"
+tulis "\n"
+
+
+
+tulis "==FUNGSI SELAGI... LAKUKAN... BALIKLAGI...==\n"
+
+# Deklarasi variable
+a = 0
+
+selagi (a<10) lakukan
+    tulis "Selagi step : ", a, "\n"
+    a = a+1
+baliklagi
+
+tulis "\n"
+tulis "==FUNGSI UNTUK... ULANG... LAGI...==\n"
+untuk (i=0; i < 10; i++) ulang
+    tulis "Untuk step : ", i, "\n"
+lagi 
+
+tamat

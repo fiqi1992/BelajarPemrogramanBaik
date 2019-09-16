@@ -1,0 +1,44 @@
+# Belajar pemrograman BAIK 06
+
+tulis "-==MENGGUNAKAN FUNGSI DI BAIK-LANG==-\n"
+tulis "\n"
+
+j = 0
+
+untuk (z=0; z<20; z++) ulang
+    con = &prima(z)
+    kalau con>0 maka
+        tulis z, " bilangan prima\n"
+        j++
+    akhirkalau
+lagi
+
+tulis "\n"
+tulis "total bilangan prima = ", j, "\n"
+
+tamat
+
+
+# Penggunaan fungsi bilangan prima
+fungsi prima(n) {
+    q = n%2
+    kalau n<2 maka
+        ret = 0
+    lainkalau n==2 maka
+        ret = 1
+    lainkalau q==0 maka
+        ret = 0
+    lainnya
+        ret = 1
+        p = akar n
+        p = absolut p
+        untuk (i=3; i<=p; i=i+2) ulang
+            r = n%i
+            kalau r==0 maka
+                ret = 0
+            akhirkalau
+        lagi
+    akhirkalau
+
+balik ret    
+}

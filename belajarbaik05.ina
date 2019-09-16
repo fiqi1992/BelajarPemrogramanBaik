@@ -1,0 +1,20 @@
+# Belajar Pemrograman BAIK 05
+
+tulis "-==BELAJAR ARRAY DI BAIK-LANG==-\n"
+tulis "\n"
+
+untaian coba[10]
+
+coba[0] = 1220
+coba[1] = 60
+coba[2] = 80
+
+p = panjang coba
+
+tulis "nilai coba[0] = ", coba[0] ,"\n"
+tulis "nilai coba[1] = ", coba[1] ,"\n"
+tulis "nilai coba[2] = ", coba[2] ,"\n"
+
+tulis "Panjang dari UNTAIAN coba = ", p, "\n"
+
+tamat
