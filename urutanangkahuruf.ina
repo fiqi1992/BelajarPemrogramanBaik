@@ -1,0 +1,35 @@
+#Given a string containing alphanumeric ASCII characters only ([A-Za-z0-9]), sort and print the string in the following manner:
+#all sorted lowercase letters are ahead of uppercase letters,
+#all sorted uppercase letters are ahead of digits, and
+#all sorted even digits are ahead of sorted odd digits.
+
+untaian turut[20]
+turut[0] = 5
+turut[1] = 'a'
+turut[2] = 'c'
+turut[3] = 'd'
+turut[4] = 6
+turut[5] = 9
+turut[6] = 'j'
+turut[7] = 'K'
+turut[8] = 'I'
+turut[9] = 'r'
+turut[10] = 'D'
+turut[11] = 'A'
+turut[12] = 'V'
+turut[13] = 'X'
+turut[14] = 'p'
+turut[15] = 'F'
+turut[16] = 'g'
+turut[17] = 7
+turut[18] = 3
+turut[19] = 1
+
+pturut = panjang turut
+tulis pturut
+
+untuk (x=0; x<pturut-1; x++) ulang
+	tulis turut[x], "\n"
+lagi
+
+tamat

@@ -1,0 +1,96 @@
+# Aplikasi Penghitung BMI BAIK-Lang
+
+pakai_layar
+
+lyr1 = layar
+titel_layar lyr1, "Aplikasi Penghitung BMI"
+luas_layar lyr1, 319, 288
+logo_layar lyr1, "baik_logo.png"
+
+alas1 = alas_tegak
+hias_layar lyr1, alas1
+
+#papan status
+papan1 = papan_status
+susun_papan_status alas1, papan1
+
+set_status papan1, "HASIL BMI = "
+
+lyr2 = layar_gulung
+isi_alas_tegak alas1, lyr2
+
+
+alas2 = alas_tetap
+hias_layar lyr2, alas2
+
+lblNama = label "Nama"
+hias_alas alas2, lblNama, 20, 20, 58, 18
+
+tNama = masukan
+set_warnadasar tNama, "kuning"
+hias_alas alas2, tNama, 80, 20, 211, 32
+
+lblAlamat = label "Alamat"
+hias_alas alas2, lblAlamat, 20, 80, 58, 18
+
+tAlamat = masukan
+set_warnadasar tAlamat, "kuning"
+hias_alas alas2, tAlamat, 80, 70, 211, 32
+
+lblTinggiBadan = label "Tinggi Badan"
+hias_alas alas2, lblTinggiBadan, 20, 120, 91, 18
+
+tTinggiBadan = masukan
+set_warnadasar tTinggiBadan, "kuning"
+hias_alas alas2, tTinggiBadan, 20, 140, 91, 32
+
+lblBeratBadan = label "Berat Badan"
+hias_alas alas2, lblBeratBadan, 20, 180, 91, 18
+
+tBeratBadan = masukan
+set_warnadasar tBeratBadan, "kuning"
+hias_alas alas2, tBeratBadan, 20, 200, 91, 32
+
+btnHitung = tombol "HITUNG"
+set_tips btnHitung,"Hitung Berat Ideal"
+hias_alas alas2, btnHitung, 200, 200, 88, 34
+
+aksi_fungsi btnHitung, &hitungBMI(tTinggiBadan, tBeratBadan, papan1)
+aksi_tutup_program lyr1
+
+tampil_layar lyr1
+kibar_layar
+
+tamat
+
+# FUNGSI ####
+# ##############
+
+Fungsi hitungBMI(tinggiBadan, beratBadan, pitaStatus) {
+	tinggi = teks_masukan tinggiBadan
+	berat = teks_masukan beratBadan
+  #tulis "Tinggi Badan ", tinggi, "\n"
+  #tulis "Berat Badan ", berat, "\n"
+  	
+	#merubah variabel tinggi dan berat menjadi angka
+  	tinggi = ke_angka tinggi
+  	berat = ke_angka berat
+  	all = (tinggi/100) * (tinggi/100)
+  	bmi = berat/all
+
+  	#memberikan hasi di papan status
+  	kata_status = ""
+
+  	jika bmi<18.0  maka
+  		kata_status = gabung "HASIL BMI = ", bmi, " (kekurusan)"
+  	lainjika bmi>25.0 maka
+  		kata_status = gabung "HASIL BMI = ", bmi, " (kegemukan)"
+  	lainnya
+  		kata_status = gabung "HASIL BMI = ", bmi, " (ideal)" 
+  	akhirjika
+
+
+  	set_status pitaStatus, kata_status
+  #tulis "BMI = ", bmi, "\n"
+}
+

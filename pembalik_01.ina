@@ -1,0 +1,32 @@
+#Aplikasi pembalik kalimat
+
+tulis "==-APLIKASI PEMBALIK KALIMAT-==\n"
+tulis "\n"
+tulis "Masukkan kalimat : "
+
+masuk kalimat
+
+z = &kewaliane(kalimat) #memanggil fungsi kewaliane
+
+tulis "\n"
+tulis "Dibalik menjadi : ", z, "\n"
+
+
+tamat
+
+fungsi kewaliane(isi) {
+	p = panjang isi #memasukkan panjang dari isi ke variable
+	gabungan = "" #inisialisasi awal gabungan kata
+
+
+	#membuat logika kebalikan kalimat
+	untuk (i=p-2; i>=0; i--) ulang
+
+	no_kata = huruf_no isi, i
+	gabungan = gabung gabungan, no_kata
+
+	lagi
+
+
+	balik gabungan
+}

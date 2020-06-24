@@ -1,0 +1,11 @@
+Tulis "Tes Fungsi Gabung \n"
+p = 1
+q = 8.239
+untaian r[10]
+r[0] = 99
+nama = "haris"
+kalimat1 = GABUNG "saya : " , nama, " nomer : ", p , "
+nilai=", q , " , point = ", r[0],"\n"
+tulis kalimat1
+
+tamat
